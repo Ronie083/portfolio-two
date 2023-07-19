@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #F3EBF6;
+}
+
+body h1 {
+    font-family: 'Bangers', cursive;
+}
+
+hr {
+    margin: 50px auto;
+    border: none;
+    border-top: 4px solid #388087;
+}
+
+#horiLine {
+    margin: 10px auto;
+    border: none;
+    border-top: 1px solid black;
+}
+
+input:focus {
+    outline: none;
+    border-color: #388087;
+}
