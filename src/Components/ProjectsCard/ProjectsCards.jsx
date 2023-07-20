@@ -32,6 +32,7 @@ const ProjectsCards = ({ image, title, features, technologies, live, code }) => 
               <strong>Technologies: </strong>
               <p>{technologies}</p>
             </div>
+            <strong>Details</strong>
             <div className="ctrlBtn my-3">
               <a href={live} className='btn btn-outline border-0 border-b-4 border-l-4 border-red-600 mr-3 bg-white'>Live Site</a>
               <a href={code} className='btn btn-outline border-0 border-b-4 border-l-4 border-red-600 bg-white'>Code Link</a>

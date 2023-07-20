@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import myImg from '../../../assets/20230415_194618.jpg'
 
 const AboutMe = () => {

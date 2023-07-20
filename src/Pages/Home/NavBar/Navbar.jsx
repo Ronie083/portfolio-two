@@ -1,4 +1,3 @@
-// import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.png'
 import { FaFacebook, FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
@@ -22,7 +21,7 @@ const Navbar = () => {
                         <div className="menu p-4 w-[70%] h-full bg-base-200 text-base-content text-3xl md:text-6xl">
                             <div className='flex justify-between items-center'>
                                 <h1 className='text-2xl md:text-4xl'>Navigation</h1>
-                                <label  htmlFor="my-drawer-4">
+                                <label htmlFor="my-drawer-4">
                                     <RxCross1 className='border-2 text-5xl border-black p-1 rounded-full'></RxCross1>
                                 </label>
                             </div>
@@ -37,10 +36,10 @@ const Navbar = () => {
                                 <li><Link smooth to='#contact'>Contact Me</Link></li>
                             </ul>
                             <div className='flex text-2xl mb-2 absolute bottom-0'>
-                                <FaFacebook className='mr-3'></FaFacebook>
-                                <FaGithub className='mr-3'></FaGithub>
-                                <FaLinkedinIn className='mr-3'></FaLinkedinIn>
-                                <FaWhatsapp className='mr-3'></FaWhatsapp>
+                                <a href="https://www.facebook.com/amzadhosen.ronie?mibextid=ZbWKwL"><FaFacebook className='mr-3'></FaFacebook></a>
+                                <a href="www.linkedin.com/in/amzad-hosen-ronie-93ba0a160"><FaLinkedinIn className='mr-3'></FaLinkedinIn></a>
+                                <a href="https://wa.me/+8801515223812"><FaWhatsapp className='mr-3'></FaWhatsapp></a>
+                                <a href="https://github.com/Ronie083"><FaGithub className='mr-3'></FaGithub></a>
                             </div>
                         </div>
                     </div>
