@@ -22,9 +22,9 @@ const Navbar = ({ theme, toggleTheme }) => {
                         <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
                         <div className="menu p-4 w-[70%] h-full bg-base-200 text-base-content text-3xl md:text-6xl">
                             <div className='flex justify-between items-center'>
-                                <h1 className='text-2xl md:text-4xl'>Navigation</h1>
+                                <h1 className='text-2xl md:text-5xl'>Navigation</h1>
                                 <label htmlFor="my-drawer-4">
-                                    <RxCross1 className='border-2 text-5xl border-black p-1 rounded-full'></RxCross1>
+                                    <RxCross1 id='crossIcon' className='text-5xl border-black p-1 rounded-full'></RxCross1>
                                 </label>
                             </div>
                             <div>
@@ -43,9 +43,9 @@ const Navbar = ({ theme, toggleTheme }) => {
                                         </label>
                                         <ReactSwitch
                                             offColor="#86d3ff"
-                                            offHandleColor="#2693e6"
+                                            offHandleColor="#000"
                                             onColor='#808080'
-                                            onHandleColor='#000'
+                                            onHandleColor='#2693e6'
                                             handleDiameter={30}
                                             uncheckedIcon={false}
                                             checkedIcon={false}

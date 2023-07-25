@@ -5,6 +5,7 @@ import Lottie from "lottie-react";
 import down from "../../../../public/Animation - 1689777960535.json"
 
 const Banner = () => {
+    
     return (
         <div className="hero min-h-screen relative">
             <div id='bg' className="bg-[#F5DB9C] text-center flex flex-col justify-end h-1/2 w-full absolute top-0">

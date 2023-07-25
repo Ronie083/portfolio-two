@@ -11,37 +11,37 @@ const skillsData = [
   {
     image: logo1,
     title: "HTML",
-    value: "80",
+    value: "90",
   },
   {
     image: logo2,
     title: "CSS",
-    value: "80",
+    value: "85",
   },
   {
     image: logo3,
     title: "CSS Frameworks",
-    value: "80",
+    value: "90",
   },
   {
     image: logo4,
     title: "JavaScript",
-    value: "80",
+    value: "65",
   },
   {
     image: logo5,
     title: "Express.js",
-    value: "80",
+    value: "55",
   },
   {
     image: logo6,
     title: "MongoDB",
-    value: "80",
+    value: "60",
   },
   {
     image: logo7,
     title: "Node.js",
-    value: "80",
+    value: "55",
   },
   {
     image: logo8,

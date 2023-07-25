@@ -5,7 +5,6 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    /* background-color: #F3EBF6; */
 }
 
 body h1 {
@@ -39,11 +38,22 @@ input:focus {
 }
 
 #dark button{
+    color: #000;
+    background-color: #F5DB9C;
+}
+
+#dark button:hover{
     color: #fff;
+    background-color: black;
 }
 
 #dark #bg {
     background: linear-gradient(167deg, rgba(0, 23, 139, 1) 0%, rgba(2, 0, 55, 1) 100%);
+}
+
+#dark .menu{
+    background: linear-gradient(167deg, rgba(0, 23, 139, 1) 0%, rgba(2, 0, 55, 1) 100%);
+    color: #fff;
 }
 
 #toggleSwitch {
@@ -53,14 +63,12 @@ input:focus {
 }
 
 #light #toggleSwitch label {
-    /* color: black; */
     margin-right: 5px;
     display: flex;
     align-items: center;
 }
 
 #dark #toggleSwitch label {
-    /* color: white; */
     margin-right: 5px;
     display: flex;
     align-items: center;
