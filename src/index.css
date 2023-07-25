@@ -5,7 +5,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #F3EBF6;
+    /* background-color: #F3EBF6; */
 }
 
 body h1 {
@@ -27,4 +27,41 @@ hr {
 input:focus {
     outline: none;
     border-color: #388087;
+}
+
+#light {
+    background-color: #f3ebf6;
+}
+
+#dark {
+    background: linear-gradient(90deg, rgba(4, 0, 80, 1) 0%, rgba(9, 9, 121, 1) 59%, rgba(0, 162, 195, 1) 100%);
+    color: #f3ebf6;
+}
+
+#dark button{
+    color: #fff;
+}
+
+#dark #bg {
+    background: linear-gradient(167deg, rgba(0, 23, 139, 1) 0%, rgba(2, 0, 55, 1) 100%);
+}
+
+#toggleSwitch {
+    display: flex;
+    justify-content: end;
+    padding: 10px 10px;
+}
+
+#light #toggleSwitch label {
+    /* color: black; */
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+}
+
+#dark #toggleSwitch label {
+    /* color: white; */
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
 }

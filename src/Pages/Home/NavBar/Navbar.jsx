@@ -1,14 +1,16 @@
 import logo from '../../../assets/logo.png'
+import logoDark from '../../../assets/logo white.png'
 import { FaFacebook, FaGithub, FaLinkedinIn, FaWhatsapp } from "react-icons/fa6";
 import { RxCross1 } from "react-icons/rx";
 import { HashLink as Link } from 'react-router-hash-link';
+import ReactSwitch from "react-switch";
 
 
-const Navbar = () => {
+const Navbar = ({ theme, toggleTheme }) => {
     return (
         <div className="navbar bg-opacity-20 bg-black container fixed z-10">
             <div className="flex-1">
-                <a className="btn btn-ghost normal-case text-xl"><img className='w-28 md:w-52' src={logo} alt="logo" /></a>
+                <a href='/' className="btn btn-ghost normal-case text-xl"><img className='w-28 md:w-52' src={theme === "light" ? logo : logoDark} alt="logo" /></a>
             </div>
             <div className="flex-none">
                 <div className='drawer drawer-end'>
@@ -34,6 +36,27 @@ const Navbar = () => {
                                 <li><Link smooth to='#skills'>My Skills</Link></li>
                                 <li><Link smooth to='#projects'>My Work</Link></li>
                                 <li><Link smooth to='#contact'>Contact Me</Link></li>
+                                <li>
+                                    <div className='flex md:justify-end text-sm md:text-2xl mt-32 md:mt-0'>
+                                        <label>
+                                            {theme === "light" ? "Light mode" : "Dark Mode"}
+                                        </label>
+                                        <ReactSwitch
+                                            offColor="#86d3ff"
+                                            offHandleColor="#2693e6"
+                                            onColor='#808080'
+                                            onHandleColor='#000'
+                                            handleDiameter={30}
+                                            uncheckedIcon={false}
+                                            checkedIcon={false}
+                                            boxShadow="0px 1px 5px rgba(0, 0, 0, 0.6)"
+                                            activeBoxShadow="0px 0px 1px 10px rgba(0, 0, 0, 0.2)"
+                                            height={20}
+                                            width={48}
+                                            onChange={toggleTheme}
+                                            checked={theme === "dark"}></ReactSwitch>
+                                    </div>
+                                </li>
                             </ul>
                             <div className='flex text-2xl mb-2 absolute bottom-0'>
                                 <a href="https://www.facebook.com/amzadhosen.ronie?mibextid=ZbWKwL"><FaFacebook className='mr-3'></FaFacebook></a>

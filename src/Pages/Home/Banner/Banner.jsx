@@ -7,7 +7,7 @@ import down from "../../../../public/Animation - 1689777960535.json"
 const Banner = () => {
     return (
         <div className="hero min-h-screen relative">
-            <div className="bg-[#F5DB9C] text-center flex flex-col justify-end h-1/2 w-full absolute top-0">
+            <div id='bg' className="bg-[#F5DB9C] text-center flex flex-col justify-end h-1/2 w-full absolute top-0">
                 <div className="flex flex-col md:flex-row justify-center items-center mb-5 md:ml-20">
                     <img className='w-10 md:w-20 md:mr-5' src={logo} alt="" />
                     <p className="md:text-left md:text-xl">Crafting Seamless Web Solutions. <br />  Ignite Your <br /> Web Projects with me.</p>
@@ -19,7 +19,7 @@ const Banner = () => {
                 backgroundImage: `url('${imageBanner}')`
             }}>
                 <HashLink smooth to='#about'>
-                    <Lottie className='w-20 absolute bottom-0 pb-4' animationData={down} loop={true}></Lottie>
+                    <Lottie className='w-20 absolute bottom-0 pb-4' animationData={down} loop={true} speed={1000}></Lottie>
                 </HashLink>
             </div>
         </div>

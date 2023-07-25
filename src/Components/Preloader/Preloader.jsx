@@ -27,11 +27,11 @@ const Preloader = () => {
     }, []);
 
     return (
-        <div className="text-center grid md:grid-cols-2" data-aos="fade-left">
-            <div className='text-3xl max-h-fit md:text-9xl flex items-center justify-center'>
+        <div className="text-center grid grid-rows-2 md:grid-rows-none md:grid-cols-2 bg-white" data-aos="fade-left">
+            <div className='text-5xl max-h-fit md:text-9xl flex items-center justify-center'>
                 <h1>{percentage.toFixed(0)}%</h1>
             </div>
-            <div className="py-32 md:py-0">
+            <div>
                 <Lottie animationData={anim} loop={true} />
             </div>
         </div>
