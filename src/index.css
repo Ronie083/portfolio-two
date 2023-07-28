@@ -52,7 +52,7 @@ input:focus {
 }
 
 #dark .menu{
-    background: linear-gradient(167deg, rgba(0, 23, 139, 1) 0%, rgba(2, 0, 55, 1) 100%);
+    background: linear-gradient(167deg, rgba(0, 23, 139, 0.757) 0%, rgba(2, 0, 55, 0.779) 100%);
     color: #fff;
 }
 

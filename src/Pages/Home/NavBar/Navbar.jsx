@@ -36,7 +36,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                                 <li><Link smooth to='#skills'>My Skills</Link></li>
                                 <li><Link smooth to='#projects'>My Work</Link></li>
                                 <li><Link smooth to='#contact'>Contact Me</Link></li>
-                                <li>
+                                <div>
                                     <div className='flex md:justify-end text-sm md:text-2xl mt-32 md:mt-0'>
                                         <label>
                                             {theme === "light" ? "Light mode" : "Dark Mode"}
@@ -56,7 +56,7 @@ const Navbar = ({ theme, toggleTheme }) => {
                                             onChange={toggleTheme}
                                             checked={theme === "dark"}></ReactSwitch>
                                     </div>
-                                </li>
+                                </div>
                             </ul>
                             <div className='flex text-2xl mb-2 absolute bottom-0'>
                                 <a href="https://www.facebook.com/amzadhosen.ronie?mibextid=ZbWKwL"><FaFacebook className='mr-3'></FaFacebook></a>
